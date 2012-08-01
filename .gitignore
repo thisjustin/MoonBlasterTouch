@@ -1,0 +1,9 @@
+*.log
+*.pot
+*.pyc
+*.project
+*.pydevproject
+.DS_Store
+.Python
+.settings/**
+.idea/
