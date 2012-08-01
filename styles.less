@@ -141,7 +141,7 @@
 }
 
 .game:hover #cloud_01 {
-  animation: animation1 6s 0s linear;
+  .animation(animation1, 6s, 0s, linear);
 }
 .game:hover #cloud_02 {
   animation: animation2 5s 2s linear;
@@ -291,51 +291,297 @@
   animation: animation6 4s 30s linear;
 }
 
+.animation(@name, @duration, @delay, @style) {
+  -webkit-animation:@arguments;
+  -moz-animation:@arguments;
+  -ms-animation:@arguments;
+  -o-animation:@arguments;
+  animation:@arguments;
+}
+
+// .animation (@name, @from, @to) {
+  // @-webkit-keyframes @name {
+    // 0%    {@from}
+    // 100%  {@to}
+  // }
+  // @-moz-keyframes @name {
+    // 0%    {@from}
+    // 100%  {@to}
+  // }
+  // @-ms-keyframes @name {
+    // 0%    {@from}
+    // 100%  {@to}
+  // }
+  // @-o-keyframes @name {
+    // 0%    {@from}
+    // 100%  {@to}
+  // }
+  // @keyframes @name {
+    // 0%    {@from}
+    // 100%  {@to}
+  // }
+// }
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+
+
+/* animations */
+@-webkit-keyframes animation1 {
+  0% { left: 260px; top: -10%; }
+  100% { left: 260px; top: 100%; }
+}
+@-moz-keyframes animation1 {
+  0% { left: 260px; top: -10%; }
+  100% { left: 260px; top: 100%; }
+}
+@-ms-keyframes animation1 {
+  0% { left: 260px; top: -10%; }
+  100% { left: 260px; top: 100%; }
+}
+@-o-keyframes animation1 {
+  0% { left: 260px; top: -10%; }
+  100% { left: 260px; top: 100%; }
+}
 @keyframes animation1 {
   0% { left: 260px; top: -10%; }
   100% { left: 260px; top: 100%; }
+}
+
+
+@-webkit-keyframes animation2 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 50px; top: 100%; }
+}
+@-moz-keyframes animation2 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 50px; top: 100%; }
+}
+@-ms-keyframes animation2 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 50px; top: 100%; }
+}
+@-o-keyframes animation2 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 50px; top: 100%; }
 }
 @keyframes animation2 {
   0% { left: 50px; top: -10%; }
   100% { left: 50px; top: 100%; }
 }
+
+
+@-webkit-keyframes animation3 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+@-moz-keyframes animation3 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+@-ms-keyframes animation3 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+@-o-keyframes animation3 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
 @keyframes animation3 {
   0% { left: 150px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+
+
+@-webkit-keyframes animation4 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+@-moz-keyframes animation4 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+@-ms-keyframes animation4 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 200px; top: 100%; }
+}
+@-o-keyframes animation4 {
+  0% { left: 300px; top: -10%; }
   100% { left: 200px; top: 100%; }
 }
 @keyframes animation4 {
   0% { left: 300px; top: -10%; }
   100% { left: 200px; top: 100%; }
 }
+
+
+@-webkit-keyframes animation5 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
+@-moz-keyframes animation5 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
+@-ms-keyframes animation5 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
+@-o-keyframes animation5 {
+  0% { left: 150px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
 @keyframes animation5 {
   0% { left: 150px; top: -10%; }
   100% { left: 150px; top: 100%; }
+}
+
+
+@-webkit-keyframes animation6 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 250px; top: 100%; }
+}
+@-moz-keyframes animation6 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 250px; top: 100%; }
+}
+@-ms-keyframes animation6 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 250px; top: 100%; }
+}
+@-o-keyframes animation6 {
+  0% { left: 50px; top: -10%; }
+  100% { left: 250px; top: 100%; }
 }
 @keyframes animation6 {
   0% { left: 50px; top: -10%; }
   100% { left: 250px; top: 100%; }
 }
+
+
+@-webkit-keyframes animation7 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 0px; top: 100%; }
+}
+@-moz-keyframes animation7 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 0px; top: 100%; }
+}
+@-ms-keyframes animation7 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 0px; top: 100%; }
+}
+@-o-keyframes animation7 {
+  0% { left: 300px; top: -10%; }
+  100% { left: 0px; top: 100%; }
+}
 @keyframes animation7 {
   0% { left: 300px; top: -10%; }
   100% { left: 0px; top: 100%; }
+}
+
+
+@-webkit-keyframes animation8 {
+  0% { left: 0px; top: -10%; }
+  100% { left: 300px; top: 100%; }
+}
+@-moz-keyframes animation8 {
+  0% { left: 0px; top: -10%; }
+  100% { left: 300px; top: 100%; }
+}
+@-ms-keyframes animation8 {
+  0% { left: 0px; top: -10%; }
+  100% { left: 300px; top: 100%; }
+}
+@-o-keyframes animation8 {
+  0% { left: 0px; top: -10%; }
+  100% { left: 300px; top: 100%; }
 }
 @keyframes animation8 {
   0% { left: 0px; top: -10%; }
   100% { left: 300px; top: 100%; }
 }
+
+
+@-webkit-keyframes animation9 {
+  0% { left: 200px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
+@-moz-keyframes animation9 {
+  0% { left: 200px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
+@-ms-keyframes animation9 {
+  0% { left: 200px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
+@-o-keyframes animation9 {
+  0% { left: 200px; top: -10%; }
+  100% { left: 150px; top: 100%; }
+}
 @keyframes animation9 {
   0% { left: 200px; top: -10%; }
   100% { left: 150px; top: 100%; }
+}
+
+
+@-webkit-keyframes animation10 {
+  0% { left: 250px; top: -10%; }
+  100% { left: 100px; top: 100%; }
+}
+@-moz-keyframes animation10 {
+  0% { left: 250px; top: -10%; }
+  100% { left: 100px; top: 100%; }
+}
+@-ms-keyframes animation10 {
+  0% { left: 250px; top: -10%; }
+  100% { left: 100px; top: 100%; }
+}
+@-o-keyframes animation10 {
+  0% { left: 250px; top: -10%; }
+  100% { left: 100px; top: 100%; }
 }
 @keyframes animation10 {
   0% { left: 250px; top: -10%; }
   100% { left: 100px; top: 100%; }
 }
 
+
+
+@-webkit-keyframes animation99 {
+  0% { left: 50px; top: -40%; }
+  100% { left: 50px; top: 30%; }
+}
+@-moz-keyframes animation99 {
+  0% { left: 50px; top: -40%; }
+  100% { left: 50px; top: 30%; }
+}
+@-ms-keyframes animation99 {
+  0% { left: 50px; top: -40%; }
+  100% { left: 50px; top: 30%; }
+}
+@-o-keyframes animation99 {
+  0% { left: 50px; top: -40%; }
+  100% { left: 50px; top: 30%; }
+}
 @keyframes animation99 {
   0% { left: 50px; top: -40%; }
   100% { left: 50px; top: 30%; }
 }
+
+
+
 
 .game #finish {
   position: absolute;
